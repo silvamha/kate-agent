@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "dev": "netlify dev",
+    "dev:server": "nodemon server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "googleapis": "^144.0.0"
   },
   "devDependencies": {
+    "netlify-cli": "^17.37.2",
     "nodemon": "^3.1.7",
     "vite": "^5.4.11"
   }

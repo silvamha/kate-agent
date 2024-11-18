@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script type="module" src="/@vite/client"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kate ESL Learning Assistant</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Kate ESL Learning Assistant</h1>
+  </header>
+  
+  <main>
+    <!-- Avatar -->
+    <div class="avatar-container">
+      <img src="assets/images/Kate2.png" alt="Agent Avatar" class="avatar">
+    </div>
+
+    <!-- Chat Interface -->
+    <section id="chat-area">
+      <div id="messages"></div>
+
+      <!-- Input and Action Buttons -->
+      <input type="text" id="user-input" placeholder="Ask me anything about English...">
+      <button id="send-btn">Send</button>
+      <button id="clear-chat-btn">Clear Chat</button>
+      <button id="delete-all-btn">Delete All</button>
+    </section>
+  </main>
+
+  <script src="src/index.js" type="module"></script>
+</body>
+</html>

@@ -1,2 +1,14 @@
 [functions]
 directory = "netlify/functions"
+node_bundler = "esbuild"
+
+[dev]
+framework = "#custom"
+command = "npm run dev:server"
+targetPort = 3000
+port = 8888
+publish = "public"
+
+[build.environment]
+MISTRALAI_KATE_API_KEY = "${MISTRALAI_KATE_API_KEY}"
+MISTRALAI_KATE_AGENT_ID = "${MISTRALAI_KATE_AGENT_ID}"
